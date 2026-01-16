@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planner</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="screen welcome active" id="welcome">
+    <h1 class="welcome-title">Welcome!</h1>
+    <h1 class="welcome-message">Let's get started!</h1>
+
+    <div class="welcome-panel">
+      <button id="startBtn" class="pixel-btn">Start</button>
+    </div>
+
+    <img src="assets/cloud.png" class="welcome-cloud cloud" alt="">
+    <img src="assets/cloud.png" class="welcome-cloud cloud-2" alt="">
+    <img src="assets/cloud.png" class="welcome-cloud cloud-3" alt="">
+
+  </div>
+
+  <div class="screen home" id="home">
+    <h1 class="home-title">Homepage</h1>
+    <div class="icon-grid">
+
+      <button class="icon" data-subject="Math">
+        <img src="assets/math.png" alt="Math">
+        <p>Math</p>
+      </button>
+
+      <button class="icon" data-subject="Science">
+        <img src="assets/Science_Icon.png" alt="Science">
+        <p>Science</p>
+      </button>
+
+      <button class="icon" data-subject="Social">
+        <img src="assets/Social_Icon.png" alt="Social">
+        <p>Social</p>
+      </button>
+
+      <button class="icon" data-subject="LA">
+        <img src="assets/LA_Icon.png" alt="LA">
+        <p>L.A</p>
+      </button>
+
+    </div>
+    <img src="assets/cloud.png" class="welcome-cloud cloud" alt="">
+    <img src="assets/cloud.png" class="welcome-cloud cloud-2" alt="">
+    <img src="assets/cloud.png" class="welcome-cloud cloud-3" alt="">
+  </div>
+
+  <div class="screen subject" id="subject">
+
+    <h2 id="subjectTitle">Math</h2>
+
+    <a id="razKidsBtn" class="razKids"
+       href="https://www.raz-kids.com"
+       target="_blank" rel="noopener">
+       Raz-kids
+    </a>
+
+    <div id="composer"></div>
+    <ul id="taskList"></ul>
+
+    <div class="bottom-buttons">
+      <button class="backBtn" id="backBtn">
+        <img src="assets/Go_Back.png" alt="Back">
+      </button>
+      <button id="addBtn" class="addBtn">
+        <img src="assets/Add_Note.png" alt="Add">
+      </button>
+    </div>
+
+    <img src="assets/cloud.png" class="welcome-cloud cloud" alt="">
+    <img src="assets/cloud.png" class="welcome-cloud cloud-2" alt="">
+    <img src="assets/cloud.png" class="welcome-cloud cloud-3" alt="">
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
